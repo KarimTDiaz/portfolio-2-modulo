@@ -4,7 +4,42 @@
 @use '../mixins/hover.scss' as *;
 
 .menu {
-  display: none;
+  position: absolute;
+  left: 1.5rem;
+  top: 10rem;
+  opacity: 0;
+  transition: opacity 1s ;
+  
+  &--show{
+    display: block;
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+ 
+  &__item{
+    position: relative;
+    margin-bottom: 1rem;
+  &::before{
+    @include pseudo(100%, 1.5px){
+      top: 2.8rem;
+      background-color: var(--primary-color);
+      transform: scale(0);
+      transform-origin: left;
+  }
+  }
+  &--show::before{
+    animation: lineshow 1s linear 1 forwards;
+    animation-delay: 0.8s;
+  }
+}
+  &__link{
+    font-size: var(--text-xl);
+    font-family: var(--primary-font-regular);
+    &--lowercase{
+      font-family: var(--primary-font-bold);
+    }
+
+  }
 
   &-icon {
     @include flexbox(flex, column, nowrap, center, space-between);
@@ -46,6 +81,7 @@
     }
   }
 }
+
 
 .clicked .menu-icon__bar--one {
   transform: translateY(25px) rotate(45deg);
@@ -119,5 +155,11 @@
     }
     100% {
       width: 50px;
+    }
+  }
+
+  @keyframes lineshow {
+    to{
+      transform: scale(1);
     }
   }

@@ -2,13 +2,23 @@
   font-family:feixenbold ;
   src: url('/assets/fonts/StudioFeixenSansTRIAL-Bold.ttf');
 }
+@font-face {
+  font-family: feixenregular;
+  src: url('/assets/fonts/StudioFeixenSansTRIAL-Regular.ttf');
+}
 
 :root {
     --primary-font-bold: feixenbold;
+    --primary-font-regular:feixenregular;
 
     --title-xl:3rem;
     --title-l:2rem;
-    --title-m:1.3rem
+    --title-m:1.3rem;
+
+    --text-xl:2.5rem;
+    --text-l:2rem;
+    --text-m:1rem;
+    --text-s:0.5rem
   }
   
   /* Variables SASS */

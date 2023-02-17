@@ -6,6 +6,7 @@
 .home{
     @include flexbox(flex,column,nowrap,center,center);
     padding:  0 var(--padding-m);
+    
     &__info{
         @include hover{
             &:hover .title-lowercase{
@@ -14,5 +15,5 @@
             }
         }
     }
-    
 }
+

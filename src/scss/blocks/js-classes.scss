@@ -1,0 +1,15 @@
+@use '../mixins/responsive.scss' as*;
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
+
+.unshow-left{
+    transform: translateX(-110%);
+}
+.unshow-right{
+    transform: translateX(110%);
+}
+
+.show{
+    display: block;
+}

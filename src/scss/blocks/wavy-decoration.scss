@@ -8,8 +8,8 @@
   width: 400px;
   height: 50px;
   overflow: hidden;
-  
-
+  transition: transform 0.5s;
+ 
   &::before{
     content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
     position: absolute;
@@ -22,8 +22,16 @@
     text-decoration-color: var(--secondary-color);
     text-decoration-line: underline;
     animation: animate 1s linear infinite;
-    }
+    transform:rotate(90deg);
   }
+  
+  &--show::before{
+    transform:rotate(90deg);
+  }
+  &--show{
+    transform:rotate(90deg) translateX(65px) translateY(-10rem);
+  }
+}
 
 @keyframes animate {
     0% {

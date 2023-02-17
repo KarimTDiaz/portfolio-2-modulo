@@ -9,6 +9,7 @@
     font-size: var(--title-l);
     font-family: var(--primary-font-bold);
     color: var(--primary-color);
+    transition: transform 0.5s;
     &-lowercase{
         position: relative;
         display: inline-block;
