@@ -1,5 +1,14 @@
+@font-face {
+  font-family:feixenbold ;
+  src: url('/assets/fonts/StudioFeixenSansTRIAL-Bold.ttf');
+}
+
 :root {
-    /* Variables CSS */
+    --primary-font-bold: feixenbold;
+
+    --title-xl:3rem;
+    --title-l:2rem;
+    --title-m:1.3rem
   }
   
   /* Variables SASS */

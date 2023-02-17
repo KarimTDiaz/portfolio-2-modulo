@@ -1,0 +1,35 @@
+@use '../mixins/responsive.scss' as*;
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
+
+.wavy-decoration{
+  position: relative;
+  width: 400px;
+  height: 50px;
+  overflow: hidden;
+  
+
+  &::before{
+    content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+    position: absolute;
+    font-size: 5em;
+    top: -50px;
+    left: 0%;
+    color: transparent;
+    font-weight: 100;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--secondary-color);
+    text-decoration-line: underline;
+    animation: animate 1s linear infinite;
+    }
+  }
+
+@keyframes animate {
+    0% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(-43px);
+    }
+  }

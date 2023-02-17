@@ -1,1 +1,30 @@
+@use '../mixins/responsive.scss' as*;
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
 
+.title{
+    margin: 0.2rem;
+    text-align: center;
+    font-size: var(--title-l);
+    font-family: var(--primary-font-bold);
+    color: var(--primary-color);
+    &-lowercase{
+        position: relative;
+        display: inline-block;
+        transform: scale(0.8);
+        transition: transform 0.5s;
+    }
+    
+    &--l{
+        margin-bottom: 5rem;
+        padding: 0 var(--padding-m);
+        font-size: var(--title-m);
+    }
+    @include responsive(tablet){
+        font-size: var(--title-xl);
+        &--l{
+            font-size: var(--title-l);
+        }
+    }
+}

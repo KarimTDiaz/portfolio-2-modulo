@@ -1,5 +1,8 @@
 // El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
-import { sayHello } from './demo.js';
 
-sayHello();
+const menuIconElement = document.getElementById('menu-icon');
+
+menuIconElement.addEventListener('click', () => {
+  menuIconElement.classList.toggle('clicked');
+});

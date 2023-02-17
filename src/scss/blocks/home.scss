@@ -1,0 +1,18 @@
+@use '../mixins/responsive.scss' as*;
+@use '../mixins/flexbox.scss' as*;
+@use '../mixins/pseudo.scss' as*;
+@use '../mixins/hover.scss' as*;
+
+.home{
+    @include flexbox(flex,column,nowrap,center,center);
+    padding:  0 var(--padding-m);
+    &__info{
+        @include hover{
+            &:hover .title-lowercase{
+                transform: scale(1);
+    
+            }
+        }
+    }
+    
+}

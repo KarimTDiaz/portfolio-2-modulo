@@ -11,19 +11,50 @@
   </head>
   <body>
     <header class="header">
+      <img src="assets/images/logo.svg" alt="logo" class="logo">
+        <nav>
+          <ul class="menu" id="menu">
+            <li class="menu__item">
+              <a href="#home" class="menu__link">HOME</a>
+            </li>
+            
+            <li class="menu__item">
+              <a href="#projects" class="menu__link">PROYECTOS</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about" class="menu__link">SOBRE MI</a>
+            </li>
+            <li class="menu__item">
+              <a href="#skills" class="menu__link">SKILLS</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contact" class="menu__link">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="menu-icon" class="menu-icon">
+          <span class="menu-icon__bar menu-icon__bar--one"></span>
+          <span class="menu-icon__bar menu-icon__bar--two"></span>
+          <span class="menu-icon__bar menu-icon__bar--three"></span>
+        </div>
     </header>
     <main class="main">
       <div class="home">
-        <svg viewBox="0 0 1320 300">
-          <text class="title title--main" x="50%" y="50%" dy=".35em" text-anchor="middle" fill="none">
-            HEY, IM KARIM
-          </text>
-         
-
-        </svg>	
+        <div class="home__info">
+        <h1 class="title title--xl">HEY, W<span class="title-lowercase">E</span>LC<span class="title-lowercase">O</span>ME TO MY P<span class="title-lowercase">O</span>RTFOLI<span class="title-lowercase">O</span></h1>
+        <h2 class="title title--l">I'M K<span class="title-lowercase">A</span>RIM, FR<span class="title-lowercase">O</span>NT-END W<span class="title-lowercase">E</span>B DEVEL<span class="title-lowercase">O</span>PER</h2>
+      </div>
+        <div class="wavy-decoration">
+        </div>
       </div>
     </main>
     <footer class="footer"></footer>
+    <div class="balls">
+      <div class="balls__item balls__item--turqoise "></div>
+      <div class="balls__item balls__item--purple"></div>
+      <div class="balls__item balls__item--blue"></div>
+      <div class="balls__item balls__item--yellow"></div>
+  </div>
     <div class="noise"></div>
     <script type="module" src="./js/index.js"></script>
   </body>
